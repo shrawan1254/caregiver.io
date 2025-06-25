@@ -1131,3 +1131,79 @@ form button:hover {
   display: block;
   animation: popupFadeInUp 0.4s cubic-bezier(.4,1.4,.6,1) both;
 }
+.job-application {
+  max-width: 700px;
+  margin: 48px auto 0 auto;
+  padding: 36px 28px;
+  background: linear-gradient(135deg, #fafdff 80%, #e3f0ff 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(49,130,206,0.08);
+  text-align: left;
+}
+.job-form input,
+.job-form select,
+.job-form textarea {
+  padding: 10px 12px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #f7fafc;
+  transition: border-color 0.2s;
+}
+
+.job-form input:focus,
+.job-form select:focus,
+.job-form textarea:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+.apply-btn {
+  margin-top: 18px;
+  padding: 12px 0;
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(49,130,206,0.08);
+}
+
+.apply-btn:hover {
+  background: #225ea8;
+  transform: translateY(-2px) scale(1.03);
+}
+.job-application h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #3182ce;
+  margin-bottom: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.job-application h3 {
+  color: #225ea8;
+  margin: 36px 0 12px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+@media (max-width: 700px) {
+  .job-application {
+    padding: 16px 4vw;
+  }
+}
+.job-application {
+  animation: fadeInUp 0.7s cubic-bezier(.4,1.4,.6,1);
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
